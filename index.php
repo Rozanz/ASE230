@@ -43,7 +43,7 @@
 			"major"=>"Ju Jitsu",
 			"year"=>"Sophomore",
 			"job"=>"Wrestler",
-			"photo"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCMjmslkLQ6TU5H7MhreogomkweYfNAd6LQzvUG9m4Xxh68lJIJWs11_xVp-h-sCPt6VY&usqp=CAU",
+			"photo"=>"https://cdn.shopify.com/s/files/1/0276/7008/5711/collections/UFC_JONES_JON_2468_grande.png?v=1600095855",
 			"funfact"=>"I want to be 2 fight division champion",
 			"social"=>"https://www.youtube.com/watch?v=J9h95d8M6GM",
 			"email"=>"jonjones@gmail.com",
