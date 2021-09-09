@@ -44,7 +44,7 @@
 			"major"=>"Ju Jitsu",
 			"year"=>"Sophomore",
 			"job"=>"Wrestler",
-			"photo"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCMjmslkLQ6TU5H7MhreogomkweYfNAd6LQzvUG9m4Xxh68lJIJWs11_xVp-h-sCPt6VY&usqp=CAU",
+			"photo"=>"https://cdn.shopify.com/s/files/1/0276/7008/5711/collections/UFC_JONES_JON_2468_grande.png?v=1600095855",
 			"funfact"=>"I want to become 2 fight division champion",
 			"social"=>"https://www.youtube.com/watch?v=J9h95d8M6GM",
 			"dream_job"=>"I want to be UFC heavyweight champion",
@@ -143,9 +143,6 @@
 					
 					<h5 class="font-weight-normal">Fun fact</h5>
 					<p><?=$students[$array]["funfact"]?></p>
-					<a href="<?'index.php';?> class="font-weight-normal">
-						<u><center><?='Homepage';?></center></u>
-					</a>
 				</div>
 			</div>
 		</div>
