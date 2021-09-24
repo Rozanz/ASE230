@@ -1,6 +1,7 @@
 <!<DOCTYPE html>
 <?php include 'data.php';
-	include 'functions.php'; 
+	include 'functions.php';
+    include 'json_util.php';
 ?>
 	
 	
@@ -17,7 +18,7 @@
 	</head>
 		<body>
 			<div class="container text-center">
-				<h1>This is <?=$className;?> - class of <?=$classSeason;?> <?=$classYear?></h1>
+				<h1>This is ASE230 - class of Fall 2021</h1>
 			</div>
 			<div class="container">
 				<div class="row justify-content-center">
@@ -31,10 +32,11 @@
 					</div>
 				</div>
 				<div class="row">
-					<?php 
+					<?php
+                        $fighterArr = read_content('class.json');
 						$i=0;
-						foreach($students as $student){			#using foreach loop to display card for every item using the createcard function with respect to each index of the array
-						createCard($student, $i);				#calling createCard function to display cards
+						foreach($fighterArr as $student){			#using foreach loop to display card for every item using the createcard function with respect to each index of the array
+                            createCard($student, $i);				#calling createCard function to display cards
 						 $i++; }
 					?>
 				</div>
