@@ -1,20 +1,17 @@
 <?php
 function getAge($dob){							#creating a function names getAge wh
-	$date1 = new DateTime($dob);                 #getting the DOB of each item of the array
+$date1 = new DateTime($dob);                 #getting the DOB of each item of the array
 	$present = new DateTime(date('y-m-d'));      #getting the present date using new DateTime function
 	$difference = $date1->diff($present);        # calculating the difference in age using diff function
 	echo 'Age: ', $difference->y, ' years old';	 #echoing the age
 }
 
-
-						
 function fullAge($dob){							  #creating a function names fullAge which calculates year, month and day
-	$date1 = new DateTime($dob);                  #getting the DOB of each item of the array
-	$today = new DateTime(date('y-m-d'));		  #getting the present date using new DateTime function
-	$difference = $date1->diff($today);			  # calculating the difference in age using diff function
-	echo 'Born Ago: ', $difference->y, ' years ', $difference->m, ' months ', $difference->d, ' days';  #Now echoing the month as well as the days and years
+    $date1 = new DateTime($dob);                  #getting the DOB of each item of the array
+    $today = new DateTime(date('y-m-d'));		  #getting the present date using new DateTime function
+    $difference = $date1->diff($today);			  # calculating the difference in age using diff function
+    echo 'Born Ago: ', $difference->y, ' years ', $difference->m, ' months ', $difference->d, ' days';  #Now echoing the month as well as the days and years
 }
-
 
 function createCard($student, $index){				#creating function named createCard which displays card for every item with respect to every index of the array ($student) which is denoted by $index
 ?>
