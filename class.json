@@ -1,6 +1,6 @@
 [
     {
-        "name": "Tommy Wiseau",
+        "name": "Rojan KC",
         "major": "CIT",
         "DOB": "1999-12-31",
         "year": "Junior",
@@ -26,7 +26,7 @@
         ]
     },
     {
-        "name": "Tommy Wiseau",
+        "name": "Darren Till",
         "major": "Karate",
         "DOB": "1994-2-23",
         "year": "Senior",
@@ -74,32 +74,6 @@
             {
                 "name": "Cooking",
                 "value": "18%"
-            }
-        ]
-    },
-    {
-        "name": "Tommy Wiseau",
-        "major": "CIT",
-        "DOB": "1999-12-31",
-        "year": "Junior",
-        "job": "Student",
-        "social": "https:\/\/www.youtube.com\/watch?v=vPUlDludbXQ",
-        "photo": "https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcQWv7FkFT_9_BJa_WYGS_29NoITxFMxAx2-rQ&usqp=CAU",
-        "funfact": "I can eat spicy food",
-        "email": "kcr2@nku.edu",
-        "dream_company": "My Company",
-        "dream_job": "Pilot",
-        "intro": "Here I am",
-        "quote": "Conquer your self discipline",
-        "yearpic": "he.png",
-        "skills": [
-            {
-                "name": "Python",
-                "value": "75%"
-            },
-            {
-                "name": "Java",
-                "value": "78%"
             }
         ]
     }

@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="assets/css/detail.css" />
 	<title><?=$className;?> - <?=$students[$_GET['student']]["name"]?></title>
 	<div class="container text-center mb-5">
+
 		<h1><?=$students[$_GET['student']]["name"]?></h1>
 	</div>
 	<div class="container">
@@ -104,6 +105,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 	<a  href="index.php" style=" color: black;"><b>HOME</b></a>
 	<a  href=<?php echo($modUrl) ?> style=" color: black;"><b>Modify</b></a>
-	<a  href="delete.php" style=" color: black;"><b>Delete</b></a>
+	<a  href="delete.php?student=<?= $_GET['student'] ?>" style=" color: "><b>Delete</b></a>
 </body>
 </html>

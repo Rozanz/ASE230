@@ -12,12 +12,13 @@ function read_one($filename, $index){
 }
 
 function write_json($filename, $json){
+    //$json=array_values($json);
     file_put_contents($filename, json_encode($json, JSON_PRETTY_PRINT));
 
 }
 
 function delete_json($filename, $index){
-    $json = read_json($filename);
+    $json = read_content($filename);
     unset($json[$index]);
     write_json($filename, $json);
 }
@@ -29,9 +30,9 @@ function modify_json($filename, $index, $newData){
 }
 
 
-function restore($filename){
-	$json = read_json($filename);
-	write_json($filename, $json);
+function restore(){
+	$data = read_content('class.backup.json');
+	write_json('class.json', $data);
 }
 ?>
 
