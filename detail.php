@@ -1,9 +1,10 @@
 <!<DOCTYPE html>
 <?php
     $className = 'ASE230';
-    include 'data.php';
     include 'functions.php';  #getting the data and functions page using include property
     include 'json_util.php';
+    $students = read_content('class.json');
+    $modUrl = "modify.php?index=".$_GET['student']."&name=Tommy+Wiseau";
 ?>
 
 
@@ -17,6 +18,7 @@
 	<link rel="stylesheet" href="assets/css/detail.css" />
 	<title><?=$className;?> - <?=$students[$_GET['student']]["name"]?></title>
 	<div class="container text-center mb-5">
+
 		<h1><?=$students[$_GET['student']]["name"]?></h1>
 	</div>
 	<div class="container">
@@ -99,8 +101,10 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5 .1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 	<a  href="index.php" style=" color: black;"><b>HOME</b></a>
+	<a  href=<?php echo($modUrl) ?> style=" color: black;"><b>Modify</b></a>
+	<a  href="delete.php?student=<?= $_GET['student'] ?>" style=" color: "><b>Delete</b></a>
 </body>
 </html>

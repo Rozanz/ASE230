@@ -5,22 +5,34 @@ function read_content($filename){
     return $ret;
 }
 
-function readone($filename, $index){
+function read_one($filename, $index){
     $content= read_content($filename);
     return $content[$index];
 
 }
 
-function writejson($filename, $json){
-    file_put_contents($filename, json_encode($json));
+function write_json($filename, $json){
+    //$json=array_values($json);
+    file_put_contents($filename, json_encode($json, JSON_PRETTY_PRINT));
 
 }
 
 function delete_json($filename, $index){
-    $json = read_json($filename);
+    $json = read_content($filename);
     unset($json[$index]);
     write_json($filename, $json);
 }
 
+function modify_json($filename, $index, $newData){
+    $json = read_content($filename);
+    $json[$index]['name'] = str_replace('+',' ', $newData);
+    write_json($filename, $json);
+}
+
+
+function restore(){
+	$data = read_content('class.backup.json');
+	write_json('class.json', $data);
+}
 ?>
 
