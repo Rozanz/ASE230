@@ -3,8 +3,8 @@
     $className = 'ASE230';
     include 'functions.php';  #getting the data and functions page using include property
     include 'json_util.php';
-    $students = read_content('class.json');
-    $modUrl = "modify.php?index=".$_GET['student']."&name=Tommy+Wiseau";
+    $students = read_content('class.json'); //reading the array from the json file
+    $modUrl = "modify.php?index=".$_GET['student']."&name=Tommy+Wiseau"; //query string for modifying the first and last name at the indicated index of the array using the $_GET function
 ?>
 
 
